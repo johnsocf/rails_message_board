@@ -4,7 +4,7 @@
 		<%= @post.title %>
 	</p>
 	<p>
-		posted by <%= @user.email %>
+		posted by <%= @post.user %>
 	</p>
 	<p>
 		on <%= @post.created_at.strftime("%B %e, %Y at %I:%M%p") %>
