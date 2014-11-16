@@ -1,4 +1,18 @@
 
 <div>
-	<%= @post.title %>
+	<p>
+		<%= @post.title %>
+	</p>
+	<p>
+		posted by <%= @user.email %>
+	</p>
+	<p>
+		on <%= @post.created_at.strftime("%B %e, %Y at %I:%M%p") %>
+	</p>
+	<p>
+		<%= @post.content %>
+	</p>
+	<p>
+		<%= link_to "back to posts", posts_path %>
+	</p>
 </div>
